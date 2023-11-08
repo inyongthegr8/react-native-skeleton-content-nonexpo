@@ -101,11 +101,11 @@ const SkeletonContent: React.FunctionComponent<ISkeletonContentProps> = ({
   const getBoneWidth = (boneLayout: ICustomViewStyle): number =>
     (typeof boneLayout.width === 'string'
       ? componentSize.width
-      : boneLayout.width) || 0;
+      : boneLayout.width) || 1;
   const getBoneHeight = (boneLayout: ICustomViewStyle): number =>
     (typeof boneLayout.height === 'string'
       ? componentSize.height
-      : boneLayout.height) || 0;
+      : boneLayout.height) || 1;
 
   const getGradientEndDirection = (
     boneLayout: ICustomViewStyle
